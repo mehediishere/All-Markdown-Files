@@ -12,7 +12,7 @@
 ```
 
 ### JS
-```html
+```js
 $('#number').on('input', function() {
     var value = $(this).val();
     alert($('#browser [value="' + value + '"]').data('customvalue'));
