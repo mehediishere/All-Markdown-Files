@@ -1,8 +1,8 @@
 # Common git cmd
 
 ## Add changes to remote repository
-```
-git add
+```sql
+git add *
 git commit -m "comment here"
 git push
 ```
