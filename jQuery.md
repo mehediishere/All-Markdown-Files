@@ -134,9 +134,7 @@ $( "form" ).on( "submit", false );
 
 ```js
 $( "form" ).on( "submit", function( event ) {
-
   event.preventDefault();
-
 });
 ```
 
@@ -144,9 +142,7 @@ $( "form" ).on( "submit", function( event ) {
 
 ```js
 $( "body" ).on( "click", "p", function() {
-
   alert( $( this ).text() );
-
 });
 ```
 
@@ -154,9 +150,7 @@ $( "body" ).on( "click", "p", function() {
 
 ```js
 $( "body" ).on( "click", "a", function( event ) {
-
   event.preventDefault();
-
 });
 ```
 
@@ -164,16 +158,70 @@ $( "body" ).on( "click", "a", function( event ) {
 
 ```js
 $( "#cart" ).on( "mouseenter mouseleave", function( event ) {
-
   $( this ).toggleClass( "active" );
-
 });
 ```
 
 ```js
 $( "#new-text-input" ).on( "keyup change", function( event ) {
-
   // ---
-  
+});
+```
+
+# AJAX
+
+- page-1.php
+- page-2.php
+
+## page-1.php
+
+```js
+var id = $(this).attr("data-serial");
+var user = $(this).attr("data-user");
+var total = $(".total").val();
+var location = $("#loc").val();
+
+var request = $.ajax({
+    method: "GET",
+    url: "path/page-2.php",
+    data: {
+     // key: value
+        id: id,
+        name: user,
+        total: total,
+        loc: location,
+        getData: "getData" // this is for `isset` use. like click a button for form submit/send or get data
+    }
 });
 
+request.done(function(data) {
+    var obj = JSON.parse(data);
+    $("#un_id").text(obj["id2"]);
+    $(".TotalAmount").text(obj["Amount"]);
+    $("#grandTotal").text(obj["grand_total"]);
+});
+```
+
+## page-2.php
+
+```php
+session_start();
+require_once("../config/db.php");
+
+if (isset($_GET['getData'])) {
+    $id1 = $_GET['id'];
+    $name1 = $_GET['name'];
+    $total1 = $_GET['total'];
+    $loc1 = $_GET['loc'];
+
+    // ---------
+    //     query / any calculation
+    // ---------
+
+    // Storing necessary data/value in an array
+    $array = array("id2" => "value1", "Amount" => $total, "grand_total" => $amount_final['total']);
+
+    // sending data with json encode
+    echo json_encode($array);
+    }
+```
