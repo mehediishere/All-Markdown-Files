@@ -18,3 +18,26 @@ $('#number').on('input', function() {
     alert($('#browser [value="' + value + '"]').data('customvalue'));
 });
 ```
+
+## Option in a Select tag carry multiple values
+### HTML
+```html
+<form name="car_form" method="post" action="doublevalue_action.php">
+        <select name="car" id="car">
+                <option value="">Select Car</option>
+                <option value="BMW|Red">Red BMW</option>
+                <option value="Mercedes|Black">Black Mercedes</option>
+        </select>
+        <input type="submit" name="submit" id="submit" value="submit">
+</form>
+```
+
+### PHP
+```php
+<?php
+    $result = $_POST['car'];
+    $result_explode = explode('|', $result);
+    echo "Model: ". $result_explode[0]."<br />";
+    echo "Colour: ". $result_explode[1]."<br />";
+?>
+```
