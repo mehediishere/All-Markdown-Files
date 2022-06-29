@@ -225,3 +225,19 @@ if (isset($_GET['getData'])) {
     echo json_encode($array);
     }
 ```
+
+## [Sum of values from different divs with the same class](https://stackoverflow.com/questions/7249757/sum-of-values-from-different-divs-with-the-same-class)
+```html
+<div class="totalprice">6.7</div>
+<div class="totalprice">8.9</div>
+<div class="totalprice">4.5</div>
+```
+
+```js
+var sum = 0;
+$('.totalprice').each(function()
+{
+    sum += parseFloat($(this).text());
+});
+alert(sum);
+```
