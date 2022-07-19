@@ -241,3 +241,29 @@ $('.totalprice').each(function()
 });
 alert(sum);
 ```
+
+## [The Event in the DIV Not working after reload](https://stackoverflow.com/questions/35588911/the-event-in-the-div-not-working-after-reload) / After reload div click function not working solution
+
+```js
+ // On change qty field
+ $('.field_item_qty').on( "change", function() {
+   var v = $(this).val();
+   var code = $(this).data("code");
+   console.log(code +" "+v);
+ });
+```
+Basically your current version attaches to the dom object that exists at the time the page is loaded. When your div is rewritten it loses the event. By attaching to the parent with a selector for your element, you are saying to run this event for any child of mine that matches the selector, now or in the future.
+** Solution: **
+
+```js
+// On change qty field
+$(document).on("change", ".field_item_qty", function() {
+  var v = $(this).val();
+  var code = $(this).data("code");
+  var price = $(".price_field_"+code).val();
+  var vv = parseFloat(price*v);
+  $(".inc_qty_"+code).val(vv);
+  totalPrice();
+  // console.log(code + " "+ price+" "+v+" = "+price*v);
+});
+```
