@@ -251,7 +251,8 @@ alert(sum);
  });
 ```
 Basically your current version attaches to the dom object that exists at the time the page is loaded. When your div is rewritten it loses the event. By attaching to the parent with a selector for your element, you are saying to run this event for any child of mine that matches the selector, now or in the future.
-** Solution: **
+
+**Solution:**
 
 ```js
 // On change qty field
