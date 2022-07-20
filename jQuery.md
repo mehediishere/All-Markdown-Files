@@ -260,3 +260,27 @@ $(document).on("change", ".field_item_qty", function() {
 
 });
 ```
+
+## [Preview an image before it is uploaded](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded)
+
+```html
+<input type='file' onchange="readURL(this);" /> 
+<img id="ShowImage" src="#" />
+```
+
+```js
+ function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#ShowImage')
+                .attr('src', e.target.result)
+                .width(150)
+                .height(200);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+```
