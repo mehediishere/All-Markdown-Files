@@ -190,7 +190,8 @@ var request = $.ajax({
         name: user,
         total: total,
         loc: location,
-        getData: "getData" // this is for `isset` use. like click a button for form submit/send or get data
+        getData: "getData" // (Optional) this is for `isset` use. like click a button for form submit/send or get data. 
+                          // Since optional you can use other key for same purpose
     }
 });
 
