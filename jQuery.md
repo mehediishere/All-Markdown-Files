@@ -182,7 +182,7 @@ var total = $(".total").val();
 var location = $("#loc").val();
 
 var request = $.ajax({
-    method: "GET",
+    method: "GET", // method GET/POST
     url: "path/page-2.php",
     data: {
      // key: value
