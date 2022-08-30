@@ -285,3 +285,11 @@ $(document).on("change", ".field_item_qty", function() {
     }
 }
 ```
+
+## Reload only a div/section
+
+Note: <code>+ " #cart-icon-count"</code> here space is mendatory inside of double quotation
+
+```js
+$("#cart-icon-count").load(window.location.href + " #cart-icon-count");
+```
