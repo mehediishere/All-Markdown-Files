@@ -293,3 +293,11 @@ Note: <code>+ " #cart-icon-count"</code> here space is mendatory inside of doubl
 ```js
 $("#cart-icon-count").load(window.location.href + " #cart-icon-count");
 ```
+
+## Add text / elements into another element & fadeout after few seconds
+
+Ex. Coupon redeemtion / expire message
+
+```js
+$('.coupon-msg').html('<label class="fd"><span class="text-success"><i class="fas fa-check"></i> Coupon successfully redeemed.</span></label>').fadeOut(2000,function(){ $('.fd').remove(); $('.coupon-msg').show(); });
+```
