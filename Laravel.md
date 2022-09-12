@@ -104,7 +104,7 @@ Route::get('/contact', [DemoController::class, 'contactMethod']);
 
 ## Adding CSS / JS links
 
-If you want use css/js file from local, place files in public folder. Then,
+If you want use css/js files from local, place files in public folder. Then,
 
 ```css
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
