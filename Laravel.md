@@ -101,3 +101,12 @@ Route::controller(DemoController::class)->group(function(){
 Route::get('/about', [DemoController::class, 'aboutMethod']);
 Route::get('/contact', [DemoController::class, 'contactMethod']);
 ```
+
+## Adding CSS / JS links
+
+If you want use css/js file from local, place files in public folder. Then,
+
+```css
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+```
+<small>Here `bootstrap.min.css` file is in css folder. That `css` folder inside of `public` folder.</small>
