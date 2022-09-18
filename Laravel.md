@@ -114,19 +114,19 @@ If you want use css/js files from local, place files in public folder. Then,
 ## Create model, controller, migration
 
 > Migration
-```
+```php
 php artisan make:migration migration_names
 ```
 <small>Note: (Not necessary to follow. Just many dev do so) A common practice is to have `migration` name in `plural` form</small>
 
 > Controller
-```
+```php
 php artisan make:controller NameController
 ```
 <small>Note: (Not necessary to follow. Just many dev do so) A common practice is to have `controller` name in `camelcase` style and end with `controller` word</small>
 
 > Model
-```
+```php
 php artisan make:model ModelName
 ```
 <small>Note: (Not necessary to follow. Just many dev do so) A common practice is to have `model` name in `camelcase` style</small>
@@ -134,7 +134,21 @@ php artisan make:model ModelName
 
 ## Create model, controller, migration from single command
 
-```
+```php
 php artisan make:model ModelName -mc
 ```
 It will first create model. Then `m` -> `migration`, lastly `c` -> `controller`.
+
+## Write php code
+
+```php
+@php
+ // your code here
+@endphp
+ ```
+You may also use as you do in raw php like below
+```php
+<?php
+ // your code here
+?>
+```
