@@ -189,3 +189,16 @@ You can also write for passing multiple data from your controller to a view usin
 ```php
 <a class="nav-link {{ request()->is('all-post') ? 'active' : '' }}" href="{{ route('admin.allpost') }}">All Posts</a>
 ```
+
+## How to display html data post in page
+If in your database you have data for display in html form like below,
+```
+<p>Hello There</p><br><p>How you doing?</p>
+```
+To show the content use : `{!! content/variable !!}`
+
+Output:
+```
+Hello There
+How you doing?
+```
