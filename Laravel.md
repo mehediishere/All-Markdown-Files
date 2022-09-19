@@ -184,3 +184,8 @@ You can also write for passing multiple data from your controller to a view usin
             ->with(['hello2'=>$hello2])
             ->with(['hello3'=>$hello3]);
 ```
+
+## Toggle navbar `active` class using `request()->is('link-name-after-slash')`
+```php
+<a class="nav-link {{ request()->is('all-post') ? 'active' : '' }}" href="{{ route('admin.allpost') }}">All Posts</a>
+```
