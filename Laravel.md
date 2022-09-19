@@ -202,3 +202,10 @@ Output:
 Hello There
 How you doing?
 ```
+
+# Query
+
+```php
+$count = Blog::select('category')->where('category', $category)->count();
+```
+Here, `Blog::` model represent `blogs` table which have the following column - id, category, date. Variable `$category = story;` So, we first selected column then defined where to look and then counted.
