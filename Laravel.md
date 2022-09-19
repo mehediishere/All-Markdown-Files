@@ -152,3 +152,29 @@ You may also use as you do in raw php like below
  // your code here
 ?>
 ```
+
+## Passing a variable in view. Ref - [Stackoverflow QA](https://stackoverflow.com/questions/18341792/how-to-pass-data-to-view-in-laravel)
+
+```php
+Route::get('/user', function () {
+    return view('profile', [
+       'variable1' => 'value1' ,
+       'variable2'=> 'value2' , // add as much as you want
+    ]);
+ });
+ ```
+ To read these variables use in your views
+ ```php
+ @if($variable1)
+
+ <p> variable1 = {{  $variable1  }}</p>
+
+@endif
+```
+
+> Another way using `with()`
+```php
+return view('index')->with('this_will_be_used_as_variable_in_views',$post);
+```
+You can also write for passing multiple data from your controller to a view using `with()`
+```php
