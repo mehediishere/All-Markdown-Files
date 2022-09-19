@@ -178,3 +178,9 @@ return view('index')->with('this_will_be_used_as_variable_in_views',$post);
 ```
 You can also write for passing multiple data from your controller to a view using `with()`
 ```php
+ return \View::make('myHome')
+            ->with(compact('project'))
+            ->with(['hello'=>$hello])
+            ->with(['hello2'=>$hello2])
+            ->with(['hello3'=>$hello3]);
+```
