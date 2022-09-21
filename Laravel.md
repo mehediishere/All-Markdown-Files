@@ -209,3 +209,34 @@ How you doing?
 $count = Blog::select('category')->where('category', $category)->count();
 ```
 Here, `Blog::` model represent `blogs` table which have the following column - id, category, date. Variable `$category = story;` So, we first selected column then defined where to look and then counted.
+
+## Show full blog post/any other data which is in html form. 
+(Html form -> data inside of html tags. Like we need to show/print/view `Hello World` which in database/variable like `<h1>Hello World</h1>`)
+
+```php
+{!! $blog->post_details !!}
+```
+
+## Show html data with limited words
+Like if you have a blog post details in data base which is in html form
+
+> Method 1
+```php
+<p>{{ \Illuminate\Support\Str::words(strip_tags($blog->post_details), 25, '...') }}</p>
+```
+It will count 25 words. Here First we remove all html tags using php build in method `strip_tags`. Then using `Str::words` we show 25 words and add `...` at the end.
+Note. Using Laravel Blade method `{!! !!}` and with `Str::words` we could do also same if data doesn't have html tags. When data have html tags `Str::words` will take 25 words (above example) including html tags first then with `{!! !!}` data will be shown without html tags. But since we took only 25 words we may miss closing brackets and when data shown with `{!! !!}` there will have closing bracket error which may break our frontend design. 
+
+That's why we first remove tags using php method then print limited string.
+
+> Method 2
+```php
+<p>{{ \Illuminate\Support\Str::limit(strip_tags($blog->post_details), 25, '...') }}</p>
+```
+It will count 25 characters
+
+> Method 3
+```php
+<p class="excerpt mb-0">{{ substr(strip_tags($blog->post_details), 0, 25) }}</p>
+```
+It will count 25 characters
