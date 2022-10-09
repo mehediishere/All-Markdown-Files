@@ -1,0 +1,4 @@
+## Disable initial `sorting`
+```
+order: []
+```
