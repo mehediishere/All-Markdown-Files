@@ -7,13 +7,7 @@
 
 # PhpStrom Shortcut
 
-## phpstorm shortcuts cheat sheet
-
-[Cheat sheet pdf](https://resources.jetbrains.com/storage/products/phpstorm/docs/PhpStorm_ReferenceCard.pdf) :
-[For Windows & Linux](https://github.com/mehediishere/All-Readme.md-files/blob/1e040f70448fac20e262bd9b6be65c2b97cf2935/Images/PhpStorm_ReferenceCard_page-0001.jpg) | 
-[For Mac](https://github.com/mehediishere/All-Readme.md-files/blob/1e040f70448fac20e262bd9b6be65c2b97cf2935/Images/PhpStorm_ReferenceCard_page-0002.jpg)
-
-![CheatSheet for windows](https://github.com/mehediishere/All-Readme.md-files/blob/1e040f70448fac20e262bd9b6be65c2b97cf2935/Images/PhpStorm_ReferenceCard_page-0001.jpg)
+## PhpStorm Shortcuts
 
 ### Open folder of current open file
 `Alt+F1`
@@ -32,3 +26,9 @@ Click on anything on `project` side bar and start writing file name / folder nam
 `Ctrl+Shift+minus(-)` to close all
 
 Be that file .css / .html / .php / .blade.php / .js / any
+
+[Full Cheat sheet pdf](https://resources.jetbrains.com/storage/products/phpstorm/docs/PhpStorm_ReferenceCard.pdf) | 
+[For Windows & Linux](https://github.com/mehediishere/All-Readme.md-files/blob/1e040f70448fac20e262bd9b6be65c2b97cf2935/Images/PhpStorm_ReferenceCard_page-0001.jpg) | 
+[For Mac](https://github.com/mehediishere/All-Readme.md-files/blob/1e040f70448fac20e262bd9b6be65c2b97cf2935/Images/PhpStorm_ReferenceCard_page-0002.jpg)
+
+![CheatSheet for windows](https://github.com/mehediishere/All-Readme.md-files/blob/1e040f70448fac20e262bd9b6be65c2b97cf2935/Images/PhpStorm_ReferenceCard_page-0001.jpg)
