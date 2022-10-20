@@ -10,8 +10,11 @@
 ### Open folder of current open file
 `Alt+F1`
 
-### Search anything - File, Folder anything
+### Search any - File, Folder
 `Ctrl+Shift+N`
+
+### Search anything - File, Folder, Method, Function, Class, CSS Class
+`Double Shift`
 
 ### Open/Close Terminal Window
 `Alt+F12`
