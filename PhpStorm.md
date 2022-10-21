@@ -24,9 +24,15 @@ Click on anything on `project` side bar and start writing file name / folder nam
 
 ### Open/Close all method/function in any file
 `Ctrl+Shift+plus(+)` to open all
+
 `Ctrl+Shift+minus(-)` to close all
 
 Be that file .css / .html / .php / .blade.php / .js / any
+
+### Open/Close current method/function (cursor is in)
+`Ctrl+plus(+)` to open
+
+`Ctrl+minus(-)` to close
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"> PDF
 
