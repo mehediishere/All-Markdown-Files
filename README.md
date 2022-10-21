@@ -1,43 +1,15 @@
-# FrontEnd-Development
+<p align="center"><a href="#" target="_blank"><img src="https://github.com/mehediishere/All-Readme.md-files/blob/885e707d93ffbf9acaab8a14e685de258b9340a1/Images/markdown-files.jpg"></a></p>
 
-## Get data attribute of Datalist
-### HTML:
-```html
-<input list="browser" id="number">
-<datalist id="browser">
-    <option data-customvalue="Abc" value="Firefox">1</option>
-    <option data-customvalue="Def" value="Chrome">2</option>
-    <option data-customvalue="Ghi" value="Explorer">3</option>
-</datalist>
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/File-Markdown-lightgreen">
+  <img src="https://img.shields.io/badge/File Generate-22 Jun 2021-blue">
+</p>
 
-### JS
-```js
-$('#number').on('input', function() {
-    var value = $(this).val();
-    alert($('#browser [value="' + value + '"]').data('customvalue'));
-});
-```
+[Markdown File Basic Syntaxs](https://www.markdownguide.org/basic-syntax/)
 
-## Option in a Select tag carry multiple values
-### HTML
-```html
-<form name="car_form" method="post" action="doublevalue_action.php">
-        <select name="car" id="car">
-                <option value="">Select Car</option>
-                <option value="BMW|Red">Red BMW</option>
-                <option value="Mercedes|Black">Black Mercedes</option>
-        </select>
-        <input type="submit" name="submit" id="submit" value="submit">
-</form>
-```
+# List of Files
+1. [Laravel](https://github.com/mehediishere/All-Readme.md-files/blob/885e707d93ffbf9acaab8a14e685de258b9340a1/Laravel.md)
+2. 
 
-### PHP
-```php
-<?php
-    $result = $_POST['car'];
-    $result_explode = explode('|', $result);
-    echo "Model: ". $result_explode[0]."<br />";
-    echo "Colour: ". $result_explode[1]."<br />";
-?>
-```
+## <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"> PDF
+
