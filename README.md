@@ -1,4 +1,4 @@
-<p align="center"><a href="#" target="_blank"><img src="https://github.com/mehediishere/All-Readme.md-files/blob/885e707d93ffbf9acaab8a14e685de258b9340a1/Images/markdown-files.jpg"></a></p>
+<p align="center"><img src="https://github.com/mehediishere/All-Readme.md-files/blob/885e707d93ffbf9acaab8a14e685de258b9340a1/Images/markdown-files.jpg"></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/File-Markdown-lightgreen">
