@@ -34,6 +34,23 @@ Be that file .css / .html / .php / .blade.php / .js / any
 
 `Ctrl+minus(-)` to close
 
+### Copy current line (where cursor is at)
+`Ctrl+C`
+
+### Dulpicate current line (where cursor is at)
+`Ctrl+D`
+
+### Move line
+`Ctrl+Shift+UP/DOWN`
+
+### Search at current file
+`Ctrl+F`
+Tap `Esc` to close
+
+### Search & Replace at current file
+`Ctrl+R`
+Tap `Esc` to close
+
 ## <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"> PDF
 
 [Full Cheat sheet pdf](https://resources.jetbrains.com/storage/products/phpstorm/docs/PhpStorm_ReferenceCard.pdf) | 
