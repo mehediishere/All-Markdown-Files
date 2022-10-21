@@ -1,4 +1,4 @@
-<p align="center"><a href="https://resources.jetbrains.com/storage/products/phpstorm/docs/PhpStorm_ReferenceCard.pdf" target="_blank"><img src="https://promyze.com/wp-content/uploads/1_oLFo5u_zyBkuS8WpSoXBIQ.png" width="500"></a></p>
+<p align="center"><a href="#" target="_blank"><img src="https://promyze.com/wp-content/uploads/1_oLFo5u_zyBkuS8WpSoXBIQ.png" width="500"></a></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-2022.1.2-orange">
