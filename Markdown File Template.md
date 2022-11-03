@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#" target="_blank">
-    <img src="https://raw.githubusercontent.com/mehediishere/All-Markdown-Files/70490171018b451be9907382da18c0a789b487f1/Images/preview_image.jpg?token=GHSAT0AAAAAAB2T5DL6GVLIO765AAYY74FWY3DM7TQ" width="100%" alt="preview">
+    <img src="https://github.com/mehediishere/All-Markdown-Files/blob/a72317fad158c9fc456f554377383c4659c1ee29/Images/preview_image.jpg" width="100%" alt="preview">
   </a>
 </p>
 
