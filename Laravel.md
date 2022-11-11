@@ -1,9 +1,7 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/mehediishere/All-Markdown-Files/blob/9a8c955183cf29d6c439ebd6f14d40324b25f094/Images/Laravel-9.jpg" width="700"></a></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
@@ -113,21 +111,29 @@ If you want use css/js files from local, place files in public folder. Then,
 
 ## Create model, controller, migration
 
+### Recomend file naming style
+
+Lets say we need an `Admin` model, controller & table
+
+|Model | Controller | Table / Migration |
+|---|---|---|
+| Admin | AdminController | admins |
+
 > Migration
 ```php
-php artisan make:migration migration_names
+php artisan make:migration create_admins_table
 ```
 <small>Note: (Not necessary to follow. Just many dev do so) A common practice is to have `migration` name in `plural` form</small>
 
 > Controller
 ```php
-php artisan make:controller NameController
+php artisan make:controller AdminController
 ```
 <small>Note: (Not necessary to follow. Just many dev do so) A common practice is to have `controller` name in `camelcase` style and end with `controller` word</small>
 
 > Model
 ```php
-php artisan make:model ModelName
+php artisan make:model Admin
 ```
 <small>Note: (Not necessary to follow. Just many dev do so) A common practice is to have `model` name in `camelcase` style</small>
 
