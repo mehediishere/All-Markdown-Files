@@ -313,3 +313,19 @@ Blade : {{ $var1 }}
 Controller : $var1
 ```
 
+**Example**
+
+*HelperServiceProvider.php*
+```php
+$categorys = ProductCategory::select('category')->get();
+View::share(compact('categorys'));
+```
+
+*Blade file*
+```php
+@foreach($categorys as $cat)
+    <p>{{ $cat->category }}</p>
+@endforeach
+```
+
+
