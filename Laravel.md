@@ -246,3 +246,70 @@ It will count 25 characters
 <p class="excerpt mb-0">{{ substr(strip_tags($blog->post_details), 0, 25) }}</p>
 ```
 It will count 25 characters
+
+## Share variable across all `controller` & `view`
+
+> Method 1: Using service provider
+
+1. Create a provider. 
+```php
+php artisan make:provider HelperServiceProvider
+```
+2. Register this new service provider to `config/app.php`
+
+```php
+    'providers' => [
+
+        // ...
+
+        /*
+         * Package Service Providers...
+         */
+
+        /*
+         * Application Service Providers...
+         */
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
+        App\Providers\HelperServiceProvider::class, // <--- This way
+    ],
+```
+
+
+3. Go to `boot` function of our `HelperServiceProvider.php` and add following code
+
+```php
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\ServiceProvider;
+
+class HelperServiceProvider extends ServiceProvider
+{
+    // ....
+
+    /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $var1 = "This is vari 1";
+        $var2 = "This is vari 2";
+        View::share(compact('var1', 'var2'));
+
+        // Variable with value
+        //View::share('variable_name', 'variable_value');
+    }
+}
+```
+
+4. Now we can use `var1`, `var2` anywhere. Like
+
+```php
+Blade : {{ $var1 }}
+Controller : $var1
+```
+
