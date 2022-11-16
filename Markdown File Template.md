@@ -29,9 +29,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat eu nisl b
 <summary>Open Navigation</summary>
   <ul>
     <li><a href="#Link">Link</a></li>
-    <li><a href="#101">Table - Alignment</a></li>
+    <li><a href="#Table-Alignment">Table - Alignment</a></li>
   </ul>
 </details>
+
+<!-- TOC -->
+
+- [Markdown Navigation](#markdown-navigation)
+    - [Link](#Link)
+    - [Table - Alignment](#Table-Alignment)
+
+<!-- /TOC -->
 
 ## Quote 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -61,7 +69,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat eu nisl b
 | Header | Title |
 | Paragraph | Text |
 
-## 101 Table - Alignment
+## Table - Alignment
 
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
