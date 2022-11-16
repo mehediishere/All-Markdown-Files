@@ -13,8 +13,8 @@
   <ul>
     <li><a href="#Start-server">Start server</a></li>
     <li><a href="#Route">Route</a></li>
-    <li><a href="#Adding-CSS-/-JS-links">Adding CSS / JS links</a></li>
-    <li><a href="#Start">Start</a></li>
+    <li><a href="#Adding-CSS-or-JS-links">Adding CSS or JS links</a></li>
+    <li><a href="#Create-model--controller--migration">Create model, controller, migration</a></li>
     <li><a href="#Start">Start</a></li>
     <li><a href="#Start">Start</a></li>
     <li><a href="#Start">Start</a></li>
@@ -132,7 +132,7 @@ Route::get('/about', [DemoController::class, 'aboutMethod']);
 Route::get('/contact', [DemoController::class, 'contactMethod']);
 ```
 
-## Adding CSS / JS links
+## Adding CSS or JS links
 
 If you want use css/js files from local, place files in public folder. Then,
 
