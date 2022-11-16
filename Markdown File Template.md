@@ -69,7 +69,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat eu nisl b
 | Header | Title |
 | Paragraph | Text |
 
-## Table - Alignment
+## Table Alignment
 
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
