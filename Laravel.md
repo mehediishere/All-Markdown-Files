@@ -14,7 +14,7 @@
     <li><a href="#Start-server">Start server</a></li>
     <li><a href="#Route">Route</a></li>
     <li><a href="#Adding-CSS-or-JS-links">Adding CSS or JS links</a></li>
-    <li><a href="#Create-model--controller--migration">Create model, controller, migration</a></li>
+    <li><a href="#Create-model-controller-migration">Create model, controller, migration</a></li>
     <li><a href="#Start">Start</a></li>
     <li><a href="#Start">Start</a></li>
     <li><a href="#Start">Start</a></li>
