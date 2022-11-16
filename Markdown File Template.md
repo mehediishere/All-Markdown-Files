@@ -31,6 +31,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat eu nisl b
     <li><a href="#Link">Link</a></li>
     <li><a href="#Whats-New">What's New?</a></li>
     <li><a href="#Table-Alignment">Table - Alignment</a></li>
+    <li><a href="#Create-model-controller-migration">Create model, controller, migration</a></li>
   </ul>
 </details>
 <br>
