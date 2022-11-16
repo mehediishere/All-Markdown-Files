@@ -24,20 +24,25 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat eu nisl blandit cursus. Aenean lobortis tristique lectus, ac fringilla ligula gravida id. Integer at hendrerit risus. Vestibulum finibus, arcu vitae mattis volutpat, lectus augue maximus elit, vitae maximus justo velit sit amet dolor. Donec quis sollicitudin ex, luctus pretium tortor. Maecenas tortor enim, tempor at turpis sed, euismod vulputate dolor.
 
 ## Navigation
-
+1. Example 1
 <details>
 <summary>Open Navigation</summary>
   <ul>
     <li><a href="#Link">Link</a></li>
+    <li><a href="#Whats-New">What's New?</a></li>
     <li><a href="#Table-Alignment">Table - Alignment</a></li>
   </ul>
 </details>
+<br>
+
+2. Example 2
 
 <!-- TOC -->
 
 - [Markdown Navigation](#markdown-navigation)
     - [Link](#Link)
     - [Table - Alignment](#Table-Alignment)
+    - [What's New?](#whats-new)
 
 <!-- /TOC -->
 
@@ -95,3 +100,5 @@ The background color should be `#ffffff` for light mode and `#0d1117` for dark m
 ## Image
 
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
+## What's New?
