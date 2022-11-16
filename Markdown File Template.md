@@ -29,7 +29,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat eu nisl b
 <summary>Open Navigation</summary>
   <ul>
     <li><a href="#Link">Link</a></li>
-    <li><a href="#Table - Alignment">Table - Alignment</a></li>
+    <li><a href="#Table%20-%20Alignment">Table - Alignment</a></li>
   </ul>
 </details>
 
