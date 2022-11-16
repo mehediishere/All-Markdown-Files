@@ -7,6 +7,38 @@
 
 # Laravel Common Commands
 
+## Navigation
+<details>
+<summary>Open Navigation</summary>
+  <ul>
+    <li><a href="#Start-server">Start server</a></li>
+    <li><a href="#Route">Route</a></li>
+    <li><a href="#Adding-CSS-JS-links">Adding CSS / JS links</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+    <li><a href="#Start">Start</a></li>
+  </ul>
+</details>
+
+<br>
+
 ## Start server
 
 ```
