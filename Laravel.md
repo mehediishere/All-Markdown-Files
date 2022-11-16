@@ -15,25 +15,15 @@
     <li><a href="#Route">Route</a></li>
     <li><a href="#Adding-CSS-or-JS-links">Adding CSS or JS links</a></li>
     <li><a href="#Create-model-controller-migration">Create model, controller, migration</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
-    <li><a href="#Start">Start</a></li>
+    <li><a href="#Recomend-file-naming-style">Recomend file naming style</a></li>
+    <li><a href="#Create-model-controller-migration-from-single-command">Create model, controller, migration from single command</a></li>
+    <li><a href="#Write-php-code">Write php code</a></li>
+    <li><a href="#Passing-a-variable-in-view">Passing a variable in view</a></li>
+    <li><a href="#Toggle-Navbar-active-class">Toggle Navbar active class</a></li>
+    <li><a href="#How-to-display-html-data-post-in-page">How to display html data post in page?</a></li>
+    <li><a href="#Query">Query</a></li>
+    <li><a href="#Show-html-data-with-limited-words">Show html data with limited words</a></li>
+    <li><a href="#Share-variable-across-all-controller-and-view">Share variable across all controller and view</a></li>
   </ul>
 </details>
 
@@ -191,7 +181,9 @@ You may also use as you do in raw php like below
 ?>
 ```
 
-## Passing a variable in view. Ref - [Stackoverflow QA](https://stackoverflow.com/questions/18341792/how-to-pass-data-to-view-in-laravel)
+## Passing a variable in view 
+
+Ref - [Stackoverflow QA](https://stackoverflow.com/questions/18341792/how-to-pass-data-to-view-in-laravel)
 
 ```php
 Route::get('/user', function () {
@@ -223,12 +215,15 @@ You can also write for passing multiple data from your controller to a view usin
             ->with(['hello3'=>$hello3]);
 ```
 
-## Toggle navbar `active` class using `request()->is('link-name-after-slash')`
+## Toggle Navbar `active` class
+
+Navbar `active` class using `request()->is('link-name-after-slash')`
+
 ```php
 <a class="nav-link {{ request()->is('all-post') ? 'active' : '' }}" href="{{ route('admin.allpost') }}">All Posts</a>
 ```
 
-## How to display html data post in page
+## How to display html data post in page?
 If in your database you have data for display in html form like below,
 ```
 <p>Hello There</p><br><p>How you doing?</p>
@@ -279,7 +274,7 @@ It will count 25 characters
 ```
 It will count 25 characters
 
-## Share variable across all `controller` & `view`
+## Share variable across all `controller` and `view`
 
 > Method 1: Using service provider
 
