@@ -23,6 +23,15 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat eu nisl blandit cursus. Aenean lobortis tristique lectus, ac fringilla ligula gravida id. Integer at hendrerit risus. Vestibulum finibus, arcu vitae mattis volutpat, lectus augue maximus elit, vitae maximus justo velit sit amet dolor. Donec quis sollicitudin ex, luctus pretium tortor. Maecenas tortor enim, tempor at turpis sed, euismod vulputate dolor.
 
+## Navigation
+
+<details>
+<summary>Open Navigation</summary>
+  <ul>
+    <li><a href="#Link">Link</a></li>
+  </ul>
+</details>
+
 ## Quote 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
