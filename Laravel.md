@@ -24,6 +24,7 @@
     <li><a href="#Query">Query</a></li>
     <li><a href="#Show-html-data-with-limited-words">Show html data with limited words</a></li>
     <li><a href="#Share-variable-across-all-controller-and-view">Share variable across all controller and view</a></li>
+    <li><a href="#Cookie">Cookie</a></li>
   </ul>
 </details>
 
@@ -355,4 +356,5 @@ View::share(compact('categorys'));
 @endforeach
 ```
 
-
+## Cookie
+Goold explanation [Laravel 9 Cookies – Get, Set, Delete Cookie](https://onlinewebtutorblog.com/laravel-9-cookies-get-set-delete-cookie-example/)
