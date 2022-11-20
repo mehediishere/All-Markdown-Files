@@ -25,6 +25,7 @@
     <li><a href="#Show-html-data-with-limited-words">Show html data with limited words</a></li>
     <li><a href="#Share-variable-across-all-controller-and-view">Share variable across all controller and view</a></li>
     <li><a href="#Cookie">Cookie</a></li>
+    <li><a href="#Passing-parameters-to-your-controller-using-anchor-tag">Passing one/two parameters to your controller using anchor tag</a></li>
   </ul>
 </details>
 
@@ -358,3 +359,30 @@ View::share(compact('categorys'));
 
 ## Cookie
 Goold explanation [Laravel 9 Cookies – Get, Set, Delete Cookie](https://onlinewebtutorblog.com/laravel-9-cookies-get-set-delete-cookie-example/)
+
+## Passing parameters to your controller using anchor tag
+
+`Blade file`
+```php
+<a href="{!! route('switch', ['prisw'=>$info->prisw, 'secsw'=>$info->secsw]) !!}">Link</a>
+```
+
+`web.php`
+```php
+$router->get('/switchinfo/{prisw}/{secsw}',[
+    'uses' => 'SwitchinfoController@switchInfo',
+    'as'   => 'switch'
+]);
+```
+
+`Controller`
+```php
+<?php namespace App\Http\Controllers;
+
+class SwitchinfoController extends Controller{
+
+    public function switchInfo($prisw, $secsw){
+       //do stuffs here with $prisw and $secsw
+    }
+}
+```
