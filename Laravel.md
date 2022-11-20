@@ -362,6 +362,8 @@ Goold explanation [Laravel 9 Cookies – Get, Set, Delete Cookie](https://online
 
 ## Passing parameters to your controller using anchor tag
 
+Ref: [stackoverflow](https://stackoverflow.com/questions/34810479/how-to-pass-value-inside-href-to-laravel-controller)
+
 `Blade file`
 ```php
 <a href="{!! route('switch', ['prisw'=>$info->prisw, 'secsw'=>$info->secsw]) !!}">Link</a>
