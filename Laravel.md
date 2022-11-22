@@ -27,6 +27,7 @@
     <li><a href="#Cookie">Cookie</a></li>
     <li><a href="#Passing-parameters-to-your-controller-using-anchor-tag">Passing one/two parameters to your controller using anchor tag</a></li>
     <li><a href="#Ajax">Ajax</a></li>
+    <li><a href="#Faker">Faker</a></li>
   </ul>
 </details>
 
@@ -410,3 +411,7 @@ $.ajax({
     }
 });
 ```
+
+## Faker
+
+[Main Github Repo](https://github.com/fzaninotto/Faker)
