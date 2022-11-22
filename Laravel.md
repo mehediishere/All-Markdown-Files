@@ -26,6 +26,7 @@
     <li><a href="#Share-variable-across-all-controller-and-view">Share variable across all controller and view</a></li>
     <li><a href="#Cookie">Cookie</a></li>
     <li><a href="#Passing-parameters-to-your-controller-using-anchor-tag">Passing one/two parameters to your controller using anchor tag</a></li>
+    <li><a href="#Ajax">Ajax</a></li>
   </ul>
 </details>
 
@@ -387,4 +388,25 @@ class SwitchinfoController extends Controller{
        //do stuffs here with $prisw and $secsw
     }
 }
+```
+
+## Ajax
+
+```js
+$.ajaxSetup({
+    header: {
+        'X-CSRF-TOKEN' : $('meta[name="_token"]').attr('content')
+    }
+});
+
+$.ajax({
+    url: "{{ url("/product-images") }}",
+    method: "POST",
+    data: {
+        _token: '{!! csrf_token() !!}'
+    },
+    success: function (response){
+        console.log(response);
+    }
+});
 ```
