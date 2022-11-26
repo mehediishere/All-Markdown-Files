@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/mehediishere/All-Markdown-Files/blob/9a8c955183cf29d6c439ebd6f14d40324b25f094/Images/laravel-cover.png" width="100%"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/mehediishere/All-Markdown-Files/blob/7e69b97f4c97f19b5ce18bff5cb91197b45c9bda/Images/laravel-cover.png" width="100%"></a></p>
 
 <p align="center">
 <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
