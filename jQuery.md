@@ -301,3 +301,13 @@ Ex. Coupon redeemtion / expire message
 ```js
 $('.coupon-msg').html('<label class="fd"><span class="text-success"><i class="fas fa-check"></i> Coupon successfully redeemed.</span></label>').fadeOut(2000,function(){ $('.fd').remove(); $('.coupon-msg').show(); });
 ```
+
+## Remove element/attribute from list/table/any-other slowly
+```js
+$(document).on('click', '.rm', function (e){
+    e.preventDefault();
+    console.log($(this).data('product'));
+    let id = $(this).data('product');
+    $('#product'+id).hide('slow', function(){ $('#product'+id).remove(); });
+});
+```
