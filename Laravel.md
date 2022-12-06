@@ -17,6 +17,7 @@
     <li><a href="#Create-model-controller-migration">Create model, controller, migration</a></li>
     <li><a href="#Recomend-file-naming-style">Recomend file naming style</a></li>
     <li><a href="#Create-model-controller-migration-from-single-command">Create model, controller, migration from single command</a></li>
+    <li><a href="#Update-specific-table">Update Specific Table</a></li>
     <li><a href="#Write-php-code">Write php code</a></li>
     <li><a href="#Passing-a-variable-in-view">Passing a variable in view</a></li>
     <li><a href="#Toggle-Navbar-active-class">Toggle Navbar active class</a></li>
@@ -170,6 +171,19 @@ php artisan make:model Admin
 php artisan make:model ModelName -mc
 ```
 It will first create model. Then `m` -> `migration`, lastly `c` -> `controller`.
+
+## Update Specific Table
+
+```php
+php artisan migrate --path=/database/migrations/2020_04_10_130703_create_test_table.php
+```
+If you want to rollback specific table
+
+```php
+php artisan migrate:rollback  --path=/database/migrations/2020_04_10_130703_create_test_table.php
+```
+
+[Ref: Stackoverflow](https://stackoverflow.com/questions/45473624/laravel-migrate-specific-files-from-migrations)
 
 ## Write php code
 
