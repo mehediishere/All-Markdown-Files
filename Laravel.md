@@ -408,12 +408,6 @@ class SwitchinfoController extends Controller{
 ## Ajax
 
 ```js
-$.ajaxSetup({
-    header: {
-        'X-CSRF-TOKEN' : $('meta[name="_token"]').attr('content')
-    }
-});
-
 $.ajax({
     url: "{{ url("/product-images") }}",
     method: "POST",
