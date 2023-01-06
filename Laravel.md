@@ -423,3 +423,5 @@ $.ajax({
 ## Faker
 
 [Main Github Repo](https://github.com/fzaninotto/Faker)
+
+[losing-session-data-after-post-from-third-party-website-like-payment-gateway](https://stackoverflow.com/questions/67692358/losing-session-data-after-post-from-third-party-website)
