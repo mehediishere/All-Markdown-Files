@@ -420,6 +420,59 @@ $.ajax({
 });
 ```
 
+## Form using ajax
+
+### form
+```html
+<form id="form_section" action="{{ route('store.category') }}" method="post" enctype="multipart/form-data">
+    @csrf
+
+</form>
+```
+
+
+### ajax
+```js
+$(function (){
+    $('#form_section').on('submit', function(e){
+        e.preventDefault();
+        var form = this;
+        $.ajax({
+            url:$(form).attr('action'),
+            method:$(form).attr('method'),
+            data:new FormData(form), _token:'{!! csrf_token() !!}',
+            processData:false,
+            dataType:'json',
+            contentType:false,
+            success:function(response){
+                console.log(response);
+            },
+            error: function (xhr){
+                console.log(xhr);
+            }
+        });
+    });
+});
+```
+
+### controller
+```php
+$request->validate([
+    'category' => 'required|string|max:100'
+]);
+
+$visibility = $request->visibility ?? "0";
+
+Category::create([
+    'category' => $request->category,
+    'visibility' => $visibility
+]);
+
+return response()->json([
+    'message' => 'Success'
+]);
+```
+
 ## Faker
 
 [Main Github Repo](https://github.com/fzaninotto/Faker)
