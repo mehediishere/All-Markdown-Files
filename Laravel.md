@@ -539,6 +539,41 @@ URL: This rule ensures that a given field is a valid URL.
 'website' => 'required|url'
 ```
 
+Image: validation check for image
+```
+'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+```
+
+You can customize the error message for the image rule using the messages method on the Validator instance. For example:
+```php
+$validatedData = $request->validate([
+    'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+], [
+    'photo.image' => 'The file must be an image.',
+    'photo.mimes' => 'The image must be a JPEG, PNG, JPG, GIF, or SVG file.',
+    'photo.max' => 'The image may not be greater than 2 megabytes in size.',
+]);
+```
+
+## Validation message
+```php
+@if($errors->any())
+    @foreach($errors->all() as $error)
+    <span class="text-danger">{{ $error }}</span>
+    @endforeach
+@endif
+
+@if(session('message'))
+    <span class="text-info">{{ session('message') }}</span>
+@endif
+
+@if(session('success'))
+    <span class="text-success">{{ session('success') }}</span>
+@endif
+
+@error {{ $message }} @enderror
+```
+
 ## Faker
 
 [Main Github Repo](https://github.com/fzaninotto/Faker)
