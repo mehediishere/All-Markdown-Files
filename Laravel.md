@@ -473,6 +473,72 @@ return response()->json([
 ]);
 ```
 
+## Validation
+
+Required: This rule ensures that a given field is present and not empty.
+```
+'name' => 'required|string'
+```
+Email: This rule ensures that a given field is a valid email address.
+```
+'email' => 'required|email'
+```
+Numeric: This rule ensures that a given field contains only numeric characters.
+```
+'age' => 'required|numeric'
+```
+Max: This rule ensures that a given field has a maximum value.
+```
+'quantity' => 'required|numeric|max:10'
+```
+
+Min: This rule ensures that a given field has a minimum value.
+```
+'price' => 'required|numeric|min:0'
+```
+
+Unique: This rule ensures that a given field is unique in the database table.
+```
+'username' => 'required|unique:users'
+```
+
+```
+'field_name' => 'unique:table_name,column_name'
+```
+
+```PHP
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rule;
+
+$validator = Validator::make($request->all(), [
+    'email' => [
+        'required',
+        'email',
+        Rule::unique(DB::table('users'), 'email'),
+    ],
+]);
+```
+
+
+Regex: This rule allows you to define a custom regular expression to validate a given field.
+```
+'password' => 'required|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/'
+```
+
+Date: This rule ensures that a given field is a valid date.
+```
+'birthdate' => 'required|date'
+```
+In: This rule ensures that a given field is one of the specified values.
+```
+'status' => 'required|in:active,inactive'
+```
+
+URL: This rule ensures that a given field is a valid URL.
+```
+'website' => 'required|url'
+```
+
 ## Faker
 
 [Main Github Repo](https://github.com/fzaninotto/Faker)
