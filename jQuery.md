@@ -311,3 +311,24 @@ $(document).on('click', '.rm', function (e){
     $('#product'+id).hide('slow', function(){ $('#product'+id).remove(); });
 });
 ```
+
+## Reset form
+```js
+<form id="my-form">
+  <input type="text" name="name" value="" disabled>
+  <input type="email" name="email" value="">
+  <textarea name="message" readonly>Some text here</textarea>
+  <button type="submit">Submit</button>
+</form>
+<button id="clear-form">Clear Form</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('#clear-form').click(function() {
+    $('#my-form')[0].reset();
+    $('input[name="name"]').val('');
+    $('textarea[name="message"]').val('');
+  });
+</script>
+```
+In this example, we have added a disabled input field and a readonly text area to the form. When the clear-form button is clicked, the JavaScript code will reset the form as before using the reset() method, and then set the values of the disabled input field and readonly text area to an empty string.
