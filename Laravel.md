@@ -574,6 +574,38 @@ $validatedData = $request->validate([
 @error {{ $message }} @enderror
 ```
 
+## Redirect Back To specific section
+
+```
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Validator;
+```
+
+```
+$validator = Validator::make($request->all(), [
+            'current_password' => 'required|string',
+           'password' => 'required|confirmed|min:8'
+        ]);
+
+        if ($validator->fails()) {
+            return Redirect::to(URL::previous() . "#password-section")
+                ->withErrors($validator);
+        }
+
+        $user = User::find(auth()->user()->id);
+
+
+        if(!Hash::check($request->current_password, $user->password)){
+            return Redirect::to(URL::previous() . "#password-section")->with('error', 'Current passowrd is not match!!');
+        }else{
+            User::where('id', auth()->user()->id)->update(['password'=>Hash::make($request->password)]);
+        }
+
+        return Redirect::to(URL::previous() . "#password-section")->with('success', 'Password updated successfully!');
+
+```
+
 ## Faker
 
 [Main Github Repo](https://github.com/fzaninotto/Faker)
